@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9900ff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+}
+
+.container > div > h3 {
+  color: lavender;
+  margin-bottom: 10px;
+}
+
+.container > div > p {
+  color: lavender;
+  font-size: small;
+}
+
+.container > div > p > a {
+  color: rgb(0, 225, 255);
+}
+
+.loginForm {
+  width: 200px;
+  background-color: lavender;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.loginForm input {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.loginForm input[type="submit"] {
+  color: lavender;
+  background-color: black;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.loginForm input[type="submit"]:hover {
+  color: black;
+  background-color: lavender;
+  cursor: pointer;
+}
+
+.loginEror {
+  color: red;
+  font-size: small;
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 5px;
+  visibility: hidden;
+}

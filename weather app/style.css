@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavender;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  padding: 15px;
+}
+
+.form > input[type=text] {
+  width: 300px;
+  padding: 3px 8px;
+  font-size: large;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid gray
+}
+
+.form > input[type=submit] {
+  padding: 3px 8px;
+  font-size: large;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.form > input[type=submit]:hover {
+  background-color: gray;
+  color: white;
+
+}
+
+
+.form > input[type=submit]:active {
+  background-color: black;
+  color: white;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 20px 20px 40px;
+
+}
+
+.weather-sec {
+  width: 50%;
+  
+}
+
+iframe {
+  width: 50%;
+}
+
+.cityName {
+  margin-bottom: 25px;
+  color: gray;
+  border-bottom: 2px solid gray;
+  width: 50%;
+}
+
+.skyAndTemp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.skyAndTemp > img {
+  width: 20%;
+}
+
+.skyAndTemp > h1 {
+  width: 75%;
+  margin-top: 30px;
+}
+
+.minAndMax > h4 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  margin-top: 25px;
+}
+
+.forecast > div {
+  width: 19%;
+  background-color: lavender;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast > div > img {
+  width: 100%
+}

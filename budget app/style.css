@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --inc-color: rgb(70, 70, 255);
+  --exp-color: rgb(255, 54, 54);
+}
+
+body {
+  background-color: rgb(255, 230, 234);
+}
+
+/* top section */
+.top-section {
+  background-color: rgb(81, 255, 81);
+}
+
+.top-section h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-decoration: underline;
+}
+
+.top-section h1 {
+  padding-top: 20px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.inc-section {
+  text-align: center;
+}
+
+.exp-section {
+  text-align: center;
+}
+
+.inc-section > div,
+.exp-section > div {
+  display: inline-flex;
+  margin: auto;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.inc-section > div {
+  background-color: var(--inc-color);
+  margin-bottom: 5px;
+}
+
+.exp-section > div {
+  background-color: var(--exp-color);
+  margin-bottom: 20px;
+}
+
+.inc-title,
+.exp-title {
+  width: 150px;
+  text-align: left;
+  font-style: italic;
+}
+
+.inc-amount,
+.exp-amount {
+  font-size: large;
+}
+
+.exp-percentage {
+  width: 50px;
+  text-align: right;
+  color: black;
+}
+
+/* mid section */
+.mid-section {
+  background-color: white;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+select,
+input,
+#enter-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 15px;
+}
+
+#enter-button {
+  color: black;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+/* bottom section */
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+
+.bottom-inc-title,
+.bottom-exp-title {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.bottom-inc-title {
+  color: var(--inc-color);
+}
+
+.bottom-exp-title {
+  color: var(--exp-color);
+}
+
+.inc-item-section > div:nth-child(odd) {
+  background-color: lavender;
+}
+
+.exp-item-section > div:nth-child(odd) {
+  background-color: lavender;
+}
+
+.inc-item,
+.exp-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.inc-item > div,
+.exp-item > div {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px 20px;
+  margin-right: -30px;
+  transition: margin-right, 0.5s;
+  transition: visibility, 0.5s;
+}
+
+.inc-item:hover > div,
+.exp-item:hover > div {
+  margin-right: 10px;
+}
+
+.inc-item > div > h4,
+.exp-item > div > h4 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.inc-item > div > p {
+  color: var(--inc-color);
+}
+
+.inc-item > div > p::before {
+  content: '+ ';
+}
+
+.exp-item > div > p {
+  color: var(--exp-color);
+}
+
+.exp-item > div > p::before {
+  content: '- ';
+}
+
+.inc-item > button,
+.exp-item > button {
+  color: red;
+  border-radius: 50%;
+  border: 1px solid red;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.inc-item:hover > button,
+.exp-item:hover > button {
+  visibility: visible;
+}

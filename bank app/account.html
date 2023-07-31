@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank | Account</title>
+    <link rel="stylesheet" href="account.css" />
+  </head>
+
+  <body>
+    <!-- /////////// welcome /////////////// -->
+    <h3 class="welcome">welcome</h3>
+    <!-- ///////// current balance /////////// -->
+    <div class="currentBalance">
+      <div>
+        <h2>Current Balance</h2>
+        <p class="currentTime">10:10 am, 01 January 2022</p>
+      </div>
+
+      <div>
+        <h1 class="mainBalance">0.00</h1>
+      </div>
+    </div>
+
+    <!-- /////////// main chart ///////// -->
+    <div class="mainChart">
+      <div class="balanceChart">
+        <!-- <div>
+          <p>1.</p>
+          <p class="deposit">DEPOSIT</p>
+          <p>01/01/2022</p>
+          <h3>+ 5000.00</h3>
+        </div>
+        <div>
+          <p>2.</p>
+          <p class="withdraw">WITHDRAW</p>
+          <p>01/01/2022</p>
+          <h3>- 3000.00</h3>
+        </div> -->
+      </div>
+
+      <div class="transChart">
+        <!-- transfer -->
+        <form class="transferForm" action="">
+          <h3>Transfer Amount</h3>
+          <input type="email" placeholder="Email to" id="transferTo" />
+          <input type="number" placeholder="Amount" id="transferAmount" /><br />
+          <button type="submit" class="transferButton">Transfer</button>
+          <p class="transferEror">Account does not exist</p>
+        </form>
+
+        <!-- loan -->
+        <form class="loanForm" action="">
+          <h3>Request Loan</h3>
+          <input type="number" placeholder="Amount" id="loanAmount" />
+          <button type="submit" class="loanButton">Get Loan</button>
+        </form>
+
+        <!-- close -->
+        <form class="closeForm" action="">
+          <h3>Close Account</h3>
+          <input type="email" placeholder="User id" id="closeId" />
+          <input
+            type="number"
+            placeholder="Password"
+            id="closePassword"
+          /><br />
+          <button type="submit" class="closeButton">Close</button>
+          <p class="closeEror">Wrong email or password</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- ///////// bottom info ////////// -->
+    <div class="bottomInfo">
+      <div class="left">
+        <p class="in"></p>
+        <p class="out"></p>
+        <p class="interest"></p>
+        <div><button class="sort">Sort ↑↓</button></div>
+      </div>
+
+      <div class="right">
+        <p>Closing at <span class="closingTime">10:00</span></p>
+      </div>
+    </div>
+
+    <script src="account.js"></script>
+  </body>
+</html>

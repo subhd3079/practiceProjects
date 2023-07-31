@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- top budget section -->
+    <div class="top-section">
+      <h2 class="budget-title">Budget of March 2022</h2>
+      <h1 class="budget">5000.00</h1>
+
+      <!-- income section -->
+      <div class="inc-section">
+        <div>
+          <div class="inc-title">INCOME</div>
+          <div class="inc-amount">+ 0.00</div>
+        </div>
+      </div>
+
+      <!-- expense section -->
+      <div class="exp-section">
+        <div>
+          <div class="exp-title">EXPENSE</div>
+          <div class="exp-amount">- 0.00</div>
+          <div class="exp-percentage">17%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mid form section -->
+    <div class="mid-section">
+      <form>
+        <select class="type">
+          <option value="inc">+</option>
+          <option value="exp">-</option>
+        </select>
+        <input type="text" class="desc" name="" placeholder="Description" />
+        <input type="number" class="amount" name="" placeholder="Amount" />
+        <button type="submit" id="enter-button">Enter</button>
+      </form>
+    </div>
+
+    <!-- bottom item section -->
+    <div class="bottom-section">
+      <!-- bottom income section -->
+      <div class="bottom-inc-section">
+        <div class="bottom-inc-title">INCOME</div>
+        <div class="inc-item-section">
+          <!-- input items here -->
+          <!-- 
+          <div class="inc-item">
+            <div>
+              <h4>test</h4>
+              <p>+ 1000.00</p>
+            </div>
+            <button>x</button>
+          </div>
+           -->
+        </div>
+      </div>
+
+      <!-- bottom expense section -->
+      <div class="bottom-exp-section">
+        <div class="bottom-exp-title">EXPENSE</div>
+        <div class="exp-item-section">
+          <!-- input items here -->
+          <!-- 
+          <div class="exp-item">
+            <div>
+              <h4>test</h4>
+              <p>- 1000.00</p>
+            </div>
+            <button>x</button>
+          </div>
+           -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

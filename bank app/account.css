@@ -1,0 +1,214 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: #9900ff;
+}
+
+/* /////////// welcome /////////////// */
+.welcome {
+  margin: auto;
+  color: lavender;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 1px solid lavender;
+  width: 300px;
+}
+
+/* ///////// current balance /////////// */
+
+.currentBalance {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: lavender;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.currentBalance > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.currentBalance p {
+  font-size: small;
+}
+
+/* /////////// main chart ///////// */
+
+.mainChart {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.balanceChart {
+  width: 63%;
+  background-color: lavender;
+  height: 412px;
+  overflow: auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.balanceChart > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid rgb(193, 193, 248);
+}
+
+.balanceChart > div:nth-child(1) {
+  border: none;
+}
+
+.balanceChart > div > p {
+  font-size: small;
+}
+
+.balanceChart > div > h3 {
+  font-weight: normal;
+}
+
+.deposit {
+  font-size: x-small !important;
+  background-color: rgb(61, 61, 255);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.withdraw {
+  font-size: x-small !important;
+  background-color: rgb(255, 50, 50);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.transChart {
+  width: 35%;
+}
+
+.transferForm,
+.loanForm,
+.closeForm {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.transferForm input,
+.loanForm input,
+.closeForm input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  margin: 10px 0px;
+  outline: none;
+}
+
+.transChart button {
+  padding: 5px;
+  width: 100px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: lavender;
+}
+
+.transChart button:hover {
+  background-color: white;
+}
+
+.transferForm {
+  background-color: rgb(43, 138, 43);
+}
+
+.loanForm {
+  background-color: rgb(228, 175, 77);
+  margin: 20px 0px;
+  color: black;
+}
+
+.closeForm {
+  background-color: rgb(243, 66, 66);
+}
+
+/* ///////// bottom info ////////// */
+
+.bottomInfo {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: lavender;
+  margin-bottom: 20px;
+}
+
+.left {
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.in {
+  color: rgb(26, 180, 26);
+}
+
+.out {
+  color: rgb(202, 202, 62);
+}
+
+.interest {
+  color: rgb(255, 140, 74);
+}
+
+.sort {
+  padding: 2px 5px;
+  cursor: pointer;
+  background-color: lavender;
+  border: none;
+  border-radius: 2px;
+}
+
+.right {
+  width: 35%;
+  text-align: right;
+}
+
+.right span {
+  font-weight: bold;
+}
+
+.transferEror {
+  font-size: small;
+  color: rgb(146, 0, 0);
+  margin-top: 5px;
+  margin-bottom: -15px;
+  visibility: hidden;
+}
+
+.closeEror {
+  font-size: small;
+  color: rgb(78, 0, 0);
+  margin-top: 5px;
+  margin-bottom: -15px;
+  visibility: hidden;
+}

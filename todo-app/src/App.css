@@ -1,0 +1,54 @@
+.App {
+  width: 350px;
+  margin: auto;
+  background-color: lavender;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.input-sec {
+  padding: 20px;
+}
+
+.input-sec > input {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid gray;
+}
+
+.input-sec > input[type="submit"] {
+  background-color: gray;
+  color: white;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding: 10px 20px 15px 20px;
+}
+
+.todo-item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.status,
+.delete {
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.delete {
+  background-color: black;
+  margin-left: 5px;
+}

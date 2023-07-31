@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"
+          alt=""
+        />
+      </div>
+      <form action="" class="form">
+        <input type="text" id="input" placeholder="Search" />
+        <input type="submit" id="button" value="Search" />
+      </form>
+
+      <div class="filter">
+        <select name="" id="type">
+          <option value="">Filter by Type</option>
+          <option value="view">View</option>
+          <option value="title">Title</option>
+          <option value="popularity">Popularity</option>
+          <option value="song">Song</option>
+          <option value="movie">Movie</option>
+          <option value="cartoon">Cartoon</option>
+          <option value="news">News</option>
+          <option value="video">Video</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="search-container"></div>
+    <div class="video-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

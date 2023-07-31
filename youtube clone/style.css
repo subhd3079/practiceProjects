@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.form {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > input {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.form > input[type=text] {
+  width: 300px;
+  margin-right: 5px;
+}
+
+.form > input[type=submit] {
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.form > input[type=submit]:hover {
+  background-color: rgb(78, 78, 78);
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.search-container > div {
+  cursor: pointer;
+}
+
+.search-container > div > img {
+  width: 100%;
+}
+
+.search-container > div > h5 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.search-container > div > p {
+  font-size: small;
+}
+
+.video-container {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.video-container > h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

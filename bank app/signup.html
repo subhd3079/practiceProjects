@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank | Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <!-- //////// signup ////////// -->
+    <div class="container">
+      <div>
+        <h3>Create your accout</h3>
+        <p class="loginLink">
+          Already have an account, <a href="index.html">Login</a>
+        </p>
+      </div>
+      <form class="signupForm">
+        <input type="text" placeholder="Name" id="name" required /><br />
+        <input type="email" placeholder="Email id" id="email" required /><br />
+        <p class="showPassword">
+          <span class="passwordPara">Show password</span>
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/unhide-128.png"
+            alt=""
+            class="imageOne"
+          />
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/hide-128.png"
+            alt=""
+            class="imageTwo hiding"
+          />
+        </p>
+        
+        <input
+          type="password"
+          placeholder="New Password"
+          id="password"
+          required
+        /><br />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          id="confirm"
+          required
+        /><br />
+        <p class="passwordEror">hello world</p>
+        <input type="submit" value="Create Account" />
+      </form>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
